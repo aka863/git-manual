@@ -562,8 +562,15 @@ git flow release finish v1.1.0
 
 ---
 
+## 将远程 HTTPS 转换为 SSH
+```bash
+# 查看远程仓库地址
+git remote -v
 
+# 将远程 HTTPS 转换为 SSH
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 
+```
 
 
 
@@ -620,8 +627,6 @@ git help -c
 # 查看git版本
 git --version
 
-# 查看远程仓库地址
-git remote -v
 
 # 记住提交账号密码
 git config --global credential.helper store
