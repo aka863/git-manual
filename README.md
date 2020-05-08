@@ -34,7 +34,7 @@
 - [标签](#标签)
 - [Rebase](#Rebase)
 - [Git Flow](#GitFlow)
-- [将远程 HTTPS 转换为 SSH](#将远程 HTTPS 转换为 SSH)
+- [将远程 HTTPS 转换为 SSH](#将远程HTTPS转换为SSH)
 - [子模块](#子模块)
 - [帮助](#帮助)
 - [其他](#其他)
@@ -561,9 +561,8 @@ git flow release finish v1.1.0
 
 
 
----
 
-## 将远程 HTTPS 转换为 SSH
+## 将远程HTTPS转换为SSH
 ```bash
 # 查看远程仓库地址
 git remote -v
