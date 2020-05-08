@@ -362,8 +362,24 @@ git pull origin master
 
 ## 查看文件的改动
 ```bash
-# 查看所有文件改动
+# 比较工作区与暂存区所有文件改动
 git diff
+
+#  比较暂存区与最新本地版本库（本地库中最近一次commit的内容）
+git diff --cached  [<path>...]
+
+# 比较工作区与最新本地版本库
+# 如果HEAD指向的是master分支，那么HEAD还可以换成master
+git diff HEAD [<path>...] 
+
+# 比较工作区与指定commit-id的差异
+git diff commit-id  [<path>...] 
+ 
+# 比较暂存区与指定commit-id的差异
+git diff --cached [<commit-id>] [<path>...] 
+ 
+# 比较两个commit-id之间的差异
+git diff [<commit-id>] [<commit-id>]
 
 # 查看具体文件的改动
 git diff README.md
